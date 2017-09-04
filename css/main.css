@@ -93,8 +93,3 @@ html,body{
 	translate: all 0.5s;
 	font-size: 20px;
 }
-
-#trade:hover{
-	background-color: #FDEBC7;
-	color: white; 
-}

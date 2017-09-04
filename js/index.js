@@ -53,7 +53,6 @@ new Vue({
 			this.btnColor = {
 				backgroundColor: '#88fbd4',
 				color: 'white',
-				border: '1px solid white',
 			}
 			this.btnContent = 'booked'
 		}
