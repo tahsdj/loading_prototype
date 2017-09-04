@@ -82,6 +82,7 @@ html,body{
 .ui,.brown,.basic,.button,button{
 	position: fixed;
 	width: calc(100% - 50px);
+	max-width: 800px;
 	bottom: 10px;
 }
 

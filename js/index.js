@@ -43,7 +43,8 @@ new Vue({
 	data: {
 		travelPlan: travelList,
 		btnColor: {
-			backgroundColor: 'white'
+			backgroundColor: 'white',
+			boxShadow: '2px 2px #d0cdcd'
 		},
 		btnContent: 'GO'
 	},
@@ -51,7 +52,8 @@ new Vue({
 		btnClicked(){
 			this.btnColor = {
 				backgroundColor: '#88fbd4',
-				color: 'white'
+				color: 'white',
+				border: '1px solid white',
 			}
 			this.btnContent = 'booked'
 		}
