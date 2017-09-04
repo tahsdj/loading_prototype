@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>Loading</title>
+	<link href='http://cdn.jsdelivr.net/semantic-ui/2.1.6/semantic.min.css' media='all' rel='stylesheet' type='text/css'/>
+	  <script src='https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js'></script>
+	  <script src='http://cdn.jsdelivr.net/semantic-ui/2.1.6/semantic.min.js'></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<div id="frame">
+			<img src="img/logo.png" class="logo" alt="">
+			<div class="travelList" v-for="spot in travelPlan" :class="spot.class">
+				<div class="title">
+					<h3>{{spot.title}}</h3>
+					<img :src="spot.imgUrl" alt="">
+				</div>
+				<div class="intro">
+					<div class="advise">
+						<h3>建議時段</h3>
+						<div class="time">
+							{{spot.duration}}
+						</div>
+					</div>
+					<div class="experienceTime">
+						<h3>體驗時間</h3>
+						<div class="time">
+							{{spot.timeLong}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info">
+			<h3>TOTAL: $2500</h3>
+		</div>
+		<button class="ui brown button" id="trade" :style="btnColor" @click="btnClicked">{{btnContent}}</button>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>

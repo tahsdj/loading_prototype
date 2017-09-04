@@ -1,0 +1,100 @@
+
+html,body{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+#app{
+	display: inline-flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-bottom: 100px;
+}
+
+#frame{
+	display: inline-flex;
+	width: calc(100% - 20px);
+	max-width: 800px;
+	padding-top: 10px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#frame .logo {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+#frame > .travelList {
+	display: inline-flex;
+	width: calc(100% - 20px);
+	height: 100px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#frame > .travelList .title {
+	display: inline-flex;
+	flex-direction: column;
+	width: calc(40% - 10px);
+	padding-left: 10px;
+	justify-content: center;
+}
+#frame > .travelList .title img{
+	width: 55px;
+	height: 55px;
+	align-self: flex-start;
+}
+#frame > .travelList .intro{
+	display: inline-flex;
+	flex-direction: row;
+	width: 60%;
+	align-items: center;
+	justify-content: flex-start;
+}
+#frame > .travelList .intro .advise {
+	flex-grow: 2;
+}
+#frame > .travelList .intro div{
+	font-size: 18px;
+}
+#frame > .travelList .intro .experienceTime{
+	flex-grow: 1;
+}
+
+#frame > .long{
+	background-color: #C79F62;
+	height: 200px;
+}
+
+#frame > .short{
+	background-color: #FDEBC7;
+}
+
+.ui,.brown,.basic,.button,button{
+	position: fixed;
+	width: calc(100% - 50px);
+	bottom: 10px;
+}
+
+#trade{
+	background-color: white;
+	padding: 22px 0px;
+	color: #C79F62;
+	border: 1px solid #FDEBC7;
+	translate: all 0.5s;
+	font-size: 20px;
+}
+
+#trade:hover{
+	background-color: #FDEBC7;
+	color: white; 
+}
