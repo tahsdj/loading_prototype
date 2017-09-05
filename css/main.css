@@ -19,7 +19,7 @@ html,body{
 #frame{
 	display: inline-flex;
 	width: calc(100% - 20px);
-	max-width: 800px;
+	max-width: 600px;
 	padding-top: 10px;
 	flex-direction: column;
 	align-items: center;
@@ -72,17 +72,27 @@ html,body{
 #frame > .long{
 	background-color: #C79F62;
 	height: 200px;
+	transition: all 0.4s;
 }
 
+#frame > .long:hover{
+	background-color: #b18d55;
+}
 #frame > .short{
 	background-color: #FDEBC7;
+	transition: all 0.4s;
+}
+
+#frame > .short:hover{
+	background-color: #eadab8;
 }
 
 .ui,.brown,.basic,.button,button{
 	position: fixed;
-	width: calc(100% - 50px);
-	max-width: 800px;
+	width: calc(100% - 30px);
+	max-width: 600px;
 	bottom: 10px;
+	outline-style: none;
 }
 
 #trade{

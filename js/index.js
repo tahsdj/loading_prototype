@@ -38,7 +38,7 @@ const travelList = [
 	]
 
 
-new Vue({
+var app = new Vue({
 	el: '#app',
 	data: {
 		travelPlan: travelList,
@@ -57,4 +57,15 @@ new Vue({
 			this.btnContent = 'booked'
 		}
 	}
+})
+
+
+const body = document.querySelector(`#frame`)
+body.addEventListener('click',function(){
+	app.btnColor = {
+		backgroundColor: 'white',
+		boxShadow: '2px 2px #d0cdcd',
+		color: '#b18d55'
+	}
+	app.btnContent = "GO"
 })
