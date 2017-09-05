@@ -46,7 +46,10 @@ var app = new Vue({
 			backgroundColor: 'white',
 			boxShadow: '2px 2px #d0cdcd'
 		},
-		btnContent: 'GO'
+		btnContent: 'GO',
+		loadingStyle: {
+			display: 'none'
+		}
 	},
 	methods: {
 		btnClicked(){
@@ -55,6 +58,12 @@ var app = new Vue({
 				color: 'white',
 			}
 			this.btnContent = 'booked'
+			this.loadingStyle.display = 'inherit'
+			let _this = this
+			setTimeout(_this.returnPage,2000)
+		},
+		returnPage() {
+			this.loadingStyle.display = 'none'
 		}
 	}
 })

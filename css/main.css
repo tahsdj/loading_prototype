@@ -102,3 +102,21 @@ html,body{
 	font-size: 20px;
 	border: none;
 }
+
+#loading{
+	position: fixed;
+	display: none;
+	top: 0vh;
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+	margin-top: 0;
+}
+
+#loading > div {
+	background-color: rgba(0,0,0,0.3);
+}
+
+#loading > div > .ui.text.loader {
+	margin-top: 50px;
+}
