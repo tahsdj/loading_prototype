@@ -51,7 +51,7 @@ var app = new Vue({
 	methods: {
 		btnClicked(){
 			this.btnColor = {
-				backgroundColor: 'rgba(104,179,45,0.54)',
+				backgroundColor: 'rgba(143,202,75,1)',
 				color: 'white',
 			}
 			this.btnContent = 'booked'
